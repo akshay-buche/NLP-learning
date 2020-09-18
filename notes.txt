@@ -5,11 +5,11 @@ Types:
 	-Text Generation: self-explanatory
 
 !!But first, cleaning!- may need to make some assumptions or toss out some data (use statistical methods)
-Next, look @ trends and outliers
+Next, look @ trends   outliers
 Then, apply techniques (ex: linear regression)
 
 
-Preprocessing: clean text before you run analyses on it!
+Preprocessing: clean text before   run analyses on it!
 	-may want to: .lowercase(), remove punctuation/common words (he, a, the, etc), 
 
 Lemmatization: transform a word into its "basic root"
@@ -19,26 +19,26 @@ Lemmatization: transform a word into its "basic root"
 Tokenization: transform a word into a numerical representation
 	-split a block of text up into discrete words
 
-1. Gather your data! --define scope of project
+1. Gather  r data! --define scope of project
 	WEB SCRAPING:
 		Requests Package: make HTTP requests; 
 		Beautiful Soup Package: Parse HTML docs
 	SAVE PYTHON DATA:
 		Pickle Package: Serialize Python Objects (save data to be used elsewhere)
 
-2. Clean data: get it in a standard format; different formats for different analyses:
+2. Clean data: get it in a st ard format; different formats for different analyses:
 	a. Corpus: 
-		corpus = collection of texts; just get data into a table (using pandas library DataFrame, which is a table)
+		corpus = collection of texts; just get data into a table (using p as library DataFrame, which is a table)
 	b. document-term matrix: 
 		i. clean text (remove excess/useless stuff)- could mean getting rid of punctuation, lowercase letters, remove #s
 			re library: regular expressions (search for a pattern)
 		ii. tokenize text (split into smaller pieces; a token is usually a word)- remove stop words (the, a, on, etc) bc don't really add much meaning-- BAG OF WORDS FORMAT(ignored order)
-		iii. document term matrix: put into a matrix for processing; need a matrix so you can store info for many texts
+		iii. document term matrix: put into a matrix for processing; need a matrix so   can store info for many texts
 			ex: <topic>	<token1>	<token2>...
 			    <text1>	1		0	...
 			   <text2>	0		0	...
-			   <text3>	0		1	... and so on
-			This way you can simplify HUGE texts into the important words!
+			   <text3>	0		1	...   so on
+			This way   can simplify HUGE texts into the important words!
 			** use scikit-learn library (Count Vectorizer)
 
 
